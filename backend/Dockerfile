@@ -10,7 +10,8 @@ ENV PATH="${GOPATH}/bin:${PATH}"
 
 FROM base as dev
 # go air for hot reload in local development
-RUN go install github.com/cosmtrek/air@latest
+COPY dev.bash .
+RUN bash dev.bash
 # download project dependencies
 WORKDIR /app
 COPY go.mod .

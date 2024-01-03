@@ -48,6 +48,14 @@ Tendo realizado o clone do projeto realize a instalação das dependências de a
 go mod download
 ```
 
+Instale também as dependências de desenvolvimento para viabilizar o trabalho em ambiente local
+
+```bash
+#!/bin/bash
+
+bash dev.bash
+```
+
 Crie um arquivo .env local para desenvolvimento e exporte suas configurações
 
 ```bash
